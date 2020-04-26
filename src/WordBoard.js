@@ -15,7 +15,7 @@ function Tile(props) {
                 height: '100%',
                 width: '100%',
                 color: props.color,
-                whiteSpace: 'nowrap', 
+                whiteSpace: 'nowrap',
                 justifyContent: 'center',
                 alignItems: 'center',
                 textAlign: 'center'
@@ -87,28 +87,28 @@ class WordBoard extends Component {
             </ButtonGroup>
 
         if (gameOver) {
-            lastRow = <h1>GAME OVER! THE WINNER IS "{(left.red == left.blue) ? <b style={{color: 'blue'}}>'BLUE'</b> : <b style={{color: 'red'}}>'RED'</b>}"</h1>
+            lastRow = <h1>GAME OVER! THE WINNER IS {(left.red == left.blue) ? <b style={{ color: 'blue' }}>TEAM BLUE</b> : <b style={{ color: 'red' }}>TEAM RED</b>}</h1>
         }
 
         return (
             <Card style={{ borderRadius: 10 }}>
                 <Card.Header>
-                    <Jumbotron fluid style={{padding: 10}}>
+                    <Jumbotron fluid style={{ padding: 10 }}>
                         <h1>Codenames Game</h1>
-                        <h4 style={{textAlign: 'left'}}>Rules:</h4>
-                        <p style={{textAlign: 'left'}}>1. Have 2 teams, one "red" (first turn) and the other blue.</p>
-                        <p style={{textAlign: 'left'}}>2. Chose a person randomly from each team as a spy-master, only he/she can use the spy-master button and see the color of all the words</p>
-                        <p style={{textAlign: 'left'}}>3. The spy master gives a "single" word as a hint and and a number (say 3).</p>
-                        <p style={{textAlign: 'left'}}>4. Then his/her team members choose/open different words (max 3, the number given by their spy master). Their turn gets over as soon as the team uncover any word of different color that their own team or they voluntarily end their turn.</p>
-                        <p style={{textAlign: 'left'}}>5. Goal of each team is to finish up their color words.</p>
-                        <p style={{textAlign: 'left'}}>6. There are 9 reds (first-turn), 8 blues, 7 greys (neutral) and one back words.</p>
-                        <p style={{textAlign: 'left'}}>7. Team instantly loses if they uncover a black word.</p>
-                        <p style={{textAlign: 'left'}}>NOTE: RELOAD FOR A NEW GAME!</p>
+                        <h4 style={{ textAlign: 'left' }}>Rules:</h4>
+                        <p style={{ textAlign: 'left' }}>1. Have 2 teams, one "red" (first turn) and the other blue.</p>
+                        <p style={{ textAlign: 'left' }}>2. Chose a person randomly from each team as a spy-master, only he/she can use the spy-master button and see the color of all the words</p>
+                        <p style={{ textAlign: 'left' }}>3. The spy master gives a "single" word as a hint and and a number (say 3).</p>
+                        <p style={{ textAlign: 'left' }}>4. Then his/her team members choose/open different words (max 3, the number given by their spy master). Their turn gets over as soon as the team uncover any word of different color that their own team or they voluntarily end their turn.</p>
+                        <p style={{ textAlign: 'left' }}>5. Goal of each team is to finish up their color words.</p>
+                        <p style={{ textAlign: 'left' }}>6. There are 9 reds (first-turn), 8 blues, 7 greys (neutral) and one back words.</p>
+                        <p style={{ textAlign: 'left' }}>7. Team instantly loses if they uncover a black word.</p>
+                        <p style={{ textAlign: 'left' }}>NOTE: RELOAD FOR A NEW GAME!</p>
                     </Jumbotron>
                 </Card.Header>
                 <Card.Body style={{ backgroundColor: (spyMaster) ? 'black' : 'lavender' }}>
                     <Container style={{ padding: 10 }}>
-                        <Row fluid style={{margin: 5}}
+                        <Row fluid style={{ margin: 5 }}
                             className="justify-content-md-center">
                             <Col sm={3}><h1><Badge variant="danger">Reds left: {left.red}</Badge></h1></Col>
                             <Col sm={3}><h1><Badge variant="primary">Blues left: {left.blue}</Badge></h1></Col>
@@ -123,11 +123,11 @@ class WordBoard extends Component {
                     </Container>
                 </Card.Body>
                 <Card.Footer>
-                <p>Made by Lalit Prakash Vatsal</p>
-                <SocialIcon url="https://twitter.com/lprakashv" label='twitter' />
-                <SocialIcon url="https://medium.com/lprakashv" label='medium' />
-                <SocialIcon url="https://www.linkedin.com/in/lalit-vatsal-ab921879/" label='linkedin' />
-                <SocialIcon url="https://github.com/lprakashv" label='github' />
+                    <p>Made by Lalit Prakash Vatsal</p>
+                    <SocialIcon url="https://twitter.com/lprakashv" label='twitter' />
+                    <SocialIcon url="https://medium.com/lprakashv" label='medium' />
+                    <SocialIcon url="https://www.linkedin.com/in/lalit-vatsal-ab921879/" label='linkedin' />
+                    <SocialIcon url="https://github.com/lprakashv" label='github' />
                 </Card.Footer>
             </Card>
         );

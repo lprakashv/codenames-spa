@@ -27,13 +27,13 @@ export function SPY_MASTER() {
 
 function makeBoard(wordList) {
     const redWords = takeNWords(wordList, 9);
-    
+
     const remainingList = wordList.filter((v) => { return !redWords.includes(v); });
-    
+
     const blueList = takeNWords(remainingList, 8);
-    
+
     const finalLeft = remainingList.filter((v) => { return !blueList.includes(v); });
-    
+
     const blackWord = takeNWords(finalLeft, 1)[0];
 
     return wordList.map((v, i, a) => {
@@ -91,7 +91,7 @@ export default function reducer(
             console.log('Over: ' + over);
             return {
                 ...state,
-                board: openBoardTile(state.board, function (v) {return over || v == action.word;}),
+                board: openBoardTile(state.board, function (v) { return over || v == action.word; }),
                 left: {
                     ...state.left,
                     [wordColor]: --state.left[wordColor]
