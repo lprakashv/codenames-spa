@@ -125,7 +125,7 @@ class WordBoard extends Component {
                 <Card.Footer>
                     <p>Made by Lalit Prakash Vatsal</p>
                     <SocialIcon url="https://twitter.com/lprakashv" label='twitter' />
-                    <SocialIcon url="https://medium.com/lprakashv" label='medium' />
+                    <SocialIcon url="https://medium.com/@lprakashv" label='medium' />
                     <SocialIcon url="https://www.linkedin.com/in/lalit-vatsal-ab921879/" label='linkedin' />
                     <SocialIcon url="https://github.com/lprakashv" label='github' />
                 </Card.Footer>
