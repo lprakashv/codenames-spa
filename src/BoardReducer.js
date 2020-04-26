@@ -17,7 +17,13 @@ export function NEW_GAME() {
     return {
         type: 'new-game'
     }
-};
+}
+
+export function SPY_MASTER() {
+    return {
+        type: 'spy-master'
+    }
+}
 
 function makeBoard(wordList) {
     const redWords = takeNWords(wordList, 9);
@@ -70,7 +76,8 @@ export default function reducer(
             black: 1
         },
         turn: 'red',
-        gameOver: false
+        gameOver: false,
+        spyMaster: false
     },
     action
 ) {
@@ -109,6 +116,12 @@ export default function reducer(
             return {
                 ...state,
                 turn: toggleTurn(state.turn)
+            };
+        case 'spy-master':
+            console.log('action: spy-master');
+            return {
+                ...state,
+                spyMaster: !state.spyMaster
             };
         default:
             return state;
