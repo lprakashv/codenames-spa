@@ -87,7 +87,7 @@ export default function reducer(
             let wordColor = getColor(state.board, action.word);
             console.log('Word color = ' + wordColor);
             console.log('Turn = ' + state.turn);
-            let over = (wordColor == 'black' || state.left.red === 0 || state.left.blue === 0);
+            let over = (wordColor == 'black' || (wordColor != 'grey' && state.left[wordColor] === 1));
             console.log('Over: ' + over);
             return {
                 ...state,
