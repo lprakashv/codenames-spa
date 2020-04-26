@@ -59,7 +59,7 @@ function getColor(board, word) {
         return v.name === word;
     }).map((v, i, a) => {
         return v.color;
-    });
+    })[0];
 }
 
 function toggleTurn(turn) {

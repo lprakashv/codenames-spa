@@ -87,7 +87,8 @@ class WordBoard extends Component {
             </ButtonGroup>
 
         if (gameOver) {
-            lastRow = <h1>GAME OVER! THE WINNER IS {(left.red == left.blue) ? <b style={{ color: 'blue' }}>TEAM BLUE</b> : <b style={{ color: 'red' }}>TEAM RED</b>}</h1>
+            let winner = left.blue === 0 ? 'BLUE' : (left.red === 0 ? 'RED' : (turn === 'RED' ? 'blue' : 'BLUE'));
+            lastRow = <h1>GAME OVER! THE WINNER IS {winner === 'BLUE' ? <b style={{ color: 'blue' }}>TEAM BLUE</b> : <b style={{ color: 'red' }}>TEAM RED</b>}</h1>
         }
 
         return (
