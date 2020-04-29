@@ -77,14 +77,16 @@ export default function reducer(
         case 'new-game':
             console.log('action: new-game');
             return {
-                ...state,
                 board: makeBoard(takeNWords(words, 25)),
                 left: {
                     red: 9,
                     blue: 8,
                     grey: 7,
                     black: 1
-                }
+                },
+                turn: 'red',
+                gameOver: false,
+                spyMaster: false
             };
         case 'finish-turn':
             console.log('action: hint');

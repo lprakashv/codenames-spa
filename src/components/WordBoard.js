@@ -49,7 +49,7 @@ class WordBoard extends Component {
         let lastRow =
             <ButtonGroup fluid vertical style={{ margin: 5 }}>
                 <Button disabled={spyMaster} variant={(spyMaster) ? 'secondary' : ((turn === 'blue') ? 'primary' : 'danger')} onClick={() => finishTurn()}>End {turn}'s Turn</Button>
-                <Button variant={(spyMaster) ? 'warning' : 'secondary'} onClick={() => toggleSpymaster()}>Spy Master</Button>
+                <Button variant='warning' onClick={() => toggleSpymaster()}>Spy Master</Button>
             </ButtonGroup>
 
         if (gameOver) {
