@@ -66,13 +66,13 @@ class WordBoard extends Component {
                     <Container style={{ padding: 10 }}>
                         <Row fluid style={{ margin: 5 }}
                             className="justify-content-md-center">
-                            <Col sm={2}><h2><Badge variant="danger">Reds left: {left.red}</Badge></h2></Col>
-                            <Col sm={2}><h2><Badge variant="primary">Blues left: {left.blue}</Badge></h2></Col>
+                            <Col sm={6}><h2><Badge variant="danger">Reds left: {left.red}</Badge></h2></Col>
+                            <Col sm={6}><h2><Badge variant="primary">Blues left: {left.blue}</Badge></h2></Col>
                         </Row>
                         {rows}
                         <Row
                             className="justify-content-md-center">
-                            <Col sm={6}>
+                            <Col sm={12}>
                                 {lastRow}
                             </Col>
                         </Row>
