@@ -1,5 +1,5 @@
 # codenames-spa
-![logo](public/logo192.png)
+<p align="center"><img src="public/logo192.png/"></p>
 
 This is a single page web app to play codenames game online.
 
