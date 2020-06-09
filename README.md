@@ -4,11 +4,12 @@
 This is a single page web app to play codenames game online.
 
 ### Screenshots
-Since, example speaks a tbhousand words!
+Since, example speaks a thousand words!
 
-![screenshot](demos/Webscreenshot.png)
-
-![screencapture](demos/Mobscreencapture.gif)
+<p align="center">
+  <img width="620" src="demos/Webscreenshot.png"/>
+  <img width="270" src="demos/Mobscreencapture.gif"/>
+</p>
 
 [**Play it Now!**](https://lprakashv.github.io/codenames-spa/)
 
