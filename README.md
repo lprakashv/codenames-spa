@@ -1,3 +1,5 @@
+[![GitHub](https://img.shields.io/github/license/lprakashv/codenames-spa?style=flat-square)](LICENSE)
+
 # codenames-spa
 <p align="center"><img src="public/logo192.png/"></p>
 
